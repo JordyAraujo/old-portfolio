@@ -67,6 +67,21 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  .btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.btn:hover {opacity: 1}
+
 </style>
 
 <body>
@@ -118,34 +133,41 @@
 
       <!-- Grid for photos -->
       <div class="w3-row-padding" style="margin:0 -16px">
+
         <div class="w3-half">
+
           <div class="container">
             <img src="/static/media/baja.2013.jpg" class="image" style="width:100%">
+            <div class="overlay">
+                <button class="btn">Hover Over Me</button>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="/static/media/baja.2016.jpg" class="image" style="width:100%">
             <div class="overlay">
               <div class="text">Hello World</div>
             </div>
           </div>
-          <div class="container">
-              <img src="/static/media/baja.2016.jpg" class="image" style="width:100%">
-              <div class="overlay">
-                <div class="text">Hello World</div>
-              </div>
-            </div>
+
         </div>
 
         <div class="w3-half">
-            <div class="container">
-                <img src="/static/media/baja.2014.jpg" class="image" style="width:100%">
-                <div class="overlay">
-                  <div class="text">Hello World</div>
-                </div>
-              </div>
-              <div class="container">
-                  <img src="/static/media/aresta.jpg" class="image" style="width:100%">
-                  <div class="overlay">
-                    <div class="text">Hello World</div>
-                  </div>
-                </div>
+
+          <div class="container">
+            <img src="/static/media/baja.2014.jpg" class="image" style="width:100%">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="/static/media/aresta.jpg" class="image" style="width:100%">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+
         </div>
         <!-- End photo grid -->
       </div>
