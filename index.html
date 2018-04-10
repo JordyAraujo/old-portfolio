@@ -112,6 +112,48 @@
     /* Black w/ opacity */
   }
 
+  .modalWSU {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+
+  .modalMIT {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+
   .modal2016 {
     display: none;
     /* Hidden by default */
@@ -182,6 +224,20 @@
     font-weight: bold;
   }
 
+  .closeWSU {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .closeMIT {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
   .close2016 {
     color: #aaa;
     float: right;
@@ -205,6 +261,20 @@
 
   .close2014:hover,
   .close2014:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .closeWSU:hover,
+  .closeWSU:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .closeMIT:hover,
+  .closeMIT:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -446,6 +516,40 @@
     </div>
   </div>
 
+  <div id="modalWSU" class="modalWSU">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="closeWSU">&times;</span>
+        <h2>Graduação Sanduíche na Wayne State University</h2>
+        <hr class="w3-opacity">
+        <p>Como competidor novato, cumpri as funções de fabricação e manutenção exigidas pela equipe. Foi um grande marco no meu
+          aprendizado, quando começou meu contato com a indústria e com o mundo maker. O contato com as competições Baja SAE,
+          que vizam simular o funcionamento de uma pequena empresa projetista e fabricante de um protótipo para apresentação
+          no mercado, me tornou um profissional mais completo, uma vez que pude experimentar o trabalho em equipe em todas
+          as suas formas. Da parte de projeto técnico ao "chão de fábrica", com fabricação e resolução de problemas, muitas
+          vezes sobre pressão.
+        </p>
+      </div>
+    </div>
+
+    <div id="modalMIT" class="modalMIT">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="closeMIT">&times;</span>
+          <h2>Estágio de Pesquisa no MIT</h2>
+          <hr class="w3-opacity">
+          <p>Como competidor novato, cumpri as funções de fabricação e manutenção exigidas pela equipe. Foi um grande marco no meu
+            aprendizado, quando começou meu contato com a indústria e com o mundo maker. O contato com as competições Baja SAE,
+            que vizam simular o funcionamento de uma pequena empresa projetista e fabricante de um protótipo para apresentação
+            no mercado, me tornou um profissional mais completo, uma vez que pude experimentar o trabalho em equipe em todas
+            as suas formas. Da parte de projeto técnico ao "chão de fábrica", com fabricação e resolução de problemas, muitas
+            vezes sobre pressão.
+          </p>
+        </div>
+      </div>
+
   <div id="modal2016" class="modal2016">
 
     <!-- Modal content -->
@@ -549,6 +653,50 @@
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modal2014.style.display = "none";
+    }
+
+  </script>
+
+<script>
+    // Get the modal
+    var modalWSU = document.getElementById('modalWSU');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnWSU");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closeWSU")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modalWSU.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modalWSU.style.display = "none";
+    }
+
+  </script>
+
+<script>
+    // Get the modal
+    var modalMIT = document.getElementById('modalMIT');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnMIT");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closeMIT")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modalMIT.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modalMIT.style.display = "none";
     }
 
   </script>
