@@ -306,6 +306,12 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  .btnSocial {
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+  }
 </style>
 
 <body>
@@ -336,7 +342,7 @@
       <i class="fa fa-bars"></i>
     </span>
 
-   <!-- Implementação futura do botão de redirecionamento para página em inglês. Traduzir o quanto antes!!!
+    <!-- Implementação futura do botão de redirecionamento para página em inglês. Traduzir o quanto antes!!!
     <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:60px;" onclick="location='http://localhost/jordyaraujo.github.io//en-us.html'">
       <i class="fa fa-language"></i>
     </span>
@@ -443,13 +449,17 @@
       <div class="w3-light-grey">
         <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
       </div>
-      <p class="w3-wide">Web Design</p>
+      <p class="w3-wide">Fabricação Mecânica</p>
       <div class="w3-light-grey">
-        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">80%</div>
       </div>
-      <p class="w3-wide">Photoshop</p>
+      <p class="w3-wide">Programação</p>
       <div class="w3-light-grey">
-        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">75%</div>
+      </div>
+      <p class="w3-wide">Eletrônica e Robótica</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">65%</div>
       </div>
       <br>
 
@@ -467,11 +477,11 @@
 
       <div class="w3-section">
         <p>
-          <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+          <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Natal/RN</p>
         <p>
-          <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+          <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +55 84 99859-0725</p>
         <p>
-          <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+          <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> jordyaraujo@outlook.com</p>
       </div>
 
       <!-- End Contact Section -->
@@ -479,7 +489,9 @@
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <button class="btnSocial">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      </button>
       <i class="fa fa-instagram w3-hover-opacity"></i>
       <i class="fa fa-snapchat w3-hover-opacity"></i>
       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
@@ -520,13 +532,14 @@
       <span class="close2014">&times;</span>
       <h2>XX Competição Baja SAE Brasil</h2>
       <hr class="w3-opacity">
-      <p>No ano seguinte ganhei mais responsabilidades na Equipe. Organizei e coordenei a seleção dos novos integrantes, bem como participei
-        ativamente do treinamento inicial dos mesmos. Logo depois subi de posição na Equipe, passando a ser Chefe do Subsistema
-        de Eletrônica, que era muito carente de produção, ao ponto de nenhum dos integrantes ter conhecimento prático ou
-        teórico do assunto. Comecei então um trabalho do zero, fazendo todo o levantamento teórico do assunto e aplicando
-        o mesmo na fabricação do protótipo. Neste ano construí um pequeno módulo com Arduino, que possuía uma tela de LCD
-        que passava informações em tempo real para o piloto. Eram elas velocidade instantânea, rotação do motor e temperatura
-        do motor. O módulo também possuía uma fileira de LEDs que demonstravam de forma quantitativa os giros do motor.
+      <p>No ano seguinte ganhei mais responsabilidades na Equipe. Organizei e coordenei a seleção dos novos integrantes, bem
+        como participei ativamente do treinamento inicial dos mesmos. Logo depois subi de posição na Equipe, passando a ser
+        Chefe do Subsistema de Eletrônica, que era muito carente de produção, ao ponto de nenhum dos integrantes ter conhecimento
+        prático ou teórico do assunto. Comecei então um trabalho do zero, fazendo todo o levantamento teórico do assunto
+        e aplicando o mesmo na fabricação do protótipo. Neste ano construí um pequeno módulo com Arduino, que possuía uma
+        tela de LCD que passava informações em tempo real para o piloto. Eram elas velocidade instantânea, rotação do motor
+        e temperatura do motor. O módulo também possuía uma fileira de LEDs que demonstravam de forma quantitativa os giros
+        do motor.
       </p>
     </div>
   </div>
@@ -538,12 +551,12 @@
       <span class="closeWSU">&times;</span>
       <h2>Graduação Sanduíche na Wayne State University</h2>
       <hr class="w3-opacity">
-      <p>Participei como bolsista do Programa Ciência Sem Fronteiras, quando fiz um curso de inglês de dois meses pelo
-        English Language Institute e uma Graduação Sanduíche em Engenharia Mecânica de dois semestres, ambos na Wayne State
-        University, localizada em Detroit/MI, Estados Unidos. Lá em resolvi cursar algumas matérias de fora do meu currículo
-        original, mas que pudessem me adicionar como profissioal, como por exemplo English Oral Skills, Machine Elements
-        Design e Japonês. Além de toda a experiência acadêmica que tive lá, também pude crescer muito como pessoa com a vivência
-        em uma cultura diferente da minha e com uma visão de mundo renovada e estendida.
+      <p>Participei como bolsista do Programa Ciência Sem Fronteiras, quando fiz um curso de inglês de dois meses pelo English
+        Language Institute e uma Graduação Sanduíche em Engenharia Mecânica de dois semestres, ambos na Wayne State University,
+        localizada em Detroit/MI, Estados Unidos. Lá em resolvi cursar algumas matérias de fora do meu currículo original,
+        mas que pudessem me adicionar como profissioal, como por exemplo English Oral Skills, Machine Elements Design e Japonês.
+        Além de toda a experiência acadêmica que tive lá, também pude crescer muito como pessoa com a vivência em uma cultura
+        diferente da minha e com uma visão de mundo renovada e estendida.
       </p>
     </div>
   </div>
