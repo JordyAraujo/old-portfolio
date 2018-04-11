@@ -6,6 +6,7 @@
 <title> Jordy Araujo </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://jordyaraujo.github.io/static/media/icon.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,11 +20,9 @@
   h6 {
     font-family: "Montserrat", sans-serif
   }
-
   .w3-row-padding img {
     margin-bottom: 12px
   }
-
   .bgimg {
     background-position: center;
     background-repeat: no-repeat;
@@ -31,12 +30,10 @@
     background-image: url('https://jordyaraujo.github.io/static/media/profile.pb.png');
     min-height: 100%;
   }
-
   .container {
     position: relative;
     width: 100%;
   }
-
   .image {
     display: block;
     width: 100%;
@@ -45,14 +42,12 @@
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
   }
-
   .image:hover {
     -webkit-filter: grayscale(0%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
     transition: .5s ease;
   }
-
   .overlay {
     position: absolute;
     top: 0;
@@ -65,11 +60,9 @@
     transition: .5s ease;
     background-color: #888888;
   }
-
   .container:hover .overlay {
     opacity: 1;
   }
-
   .text {
     color: white;
     font-size: 20px;
@@ -80,9 +73,7 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-
   /* The Modal (background) */
-
   .modal2013 {
     display: none;
     /* Hidden by default */
@@ -103,7 +94,6 @@
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
   }
-
   .modal2014 {
     display: none;
     /* Hidden by default */
@@ -124,7 +114,6 @@
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
   }
-
   .modalWSU {
     display: none;
     /* Hidden by default */
@@ -145,7 +134,6 @@
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
   }
-
   .modalMIT {
     display: none;
     /* Hidden by default */
@@ -166,7 +154,6 @@
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
   }
-
   .modal2016 {
     display: none;
     /* Hidden by default */
@@ -187,7 +174,6 @@
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
   }
-
   .modalAresta {
     display: none;
     /* Hidden by default */
@@ -208,9 +194,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
   }
-
   /* Modal Content/Box */
-
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -220,93 +204,79 @@
     width: 80%;
     /* Could be more or less, depending on screen size */
   }
-
   /* The Close Button */
-
   .close2013 {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-
   .close2014 {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-
   .closeWSU {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-
   .closeMIT {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-
   .close2016 {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-
   .closeAresta {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
-
   .close2013:hover,
   .close2013:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-
   .close2014:hover,
   .close2014:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-
   .closeWSU:hover,
   .closeWSU:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-
   .closeMIT:hover,
   .closeMIT:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-
   .close2016:hover,
   .close2016:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-
   .closeAresta:hover,
   .closeAresta:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-
   .btnSocial {
     background-color: #f1f1f1;
     border: none;
@@ -623,19 +593,16 @@
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
       var marker = new google.maps.Marker({
         position: myCenter,
       });
       marker.setMap(map);
     }
-
     // Open and close sidebar
     function openNav() {
       document.getElementById("mySidebar").style.width = "60%";
       document.getElementById("mySidebar").style.display = "block";
     }
-
     function closeNav() {
       document.getElementById("mySidebar").style.display = "none";
     }
@@ -645,133 +612,103 @@
   <script>
     // Get the modal
     var modal2013 = document.getElementById('modal2013');
-
     // Get the button that opens the modal
     var btn = document.getElementById("btn2013");
-
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close2013")[0];
-
     // When the user clicks the button, open the modal 
     btn.onclick = function () {
       modal2013.style.display = "block";
     }
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modal2013.style.display = "none";
     }
-
   </script>
 
   <script>
     // Get the modal
     var modal2014 = document.getElementById('modal2014');
-
     // Get the button that opens the modal
     var btn = document.getElementById("btn2014");
-
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close2014")[0];
-
     // When the user clicks the button, open the modal 
     btn.onclick = function () {
       modal2014.style.display = "block";
     }
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modal2014.style.display = "none";
     }
-
   </script>
 
   <script>
     // Get the modal
     var modalWSU = document.getElementById('modalWSU');
-
     // Get the button that opens the modal
     var btn = document.getElementById("btnWSU");
-
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("closeWSU")[0];
-
     // When the user clicks the button, open the modal 
     btn.onclick = function () {
       modalWSU.style.display = "block";
     }
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modalWSU.style.display = "none";
     }
-
   </script>
 
   <script>
     // Get the modal
     var modalMIT = document.getElementById('modalMIT');
-
     // Get the button that opens the modal
     var btn = document.getElementById("btnMIT");
-
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("closeMIT")[0];
-
     // When the user clicks the button, open the modal 
     btn.onclick = function () {
       modalMIT.style.display = "block";
     }
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modalMIT.style.display = "none";
     }
-
   </script>
 
   <script>
     // Get the modal
     var modal2016 = document.getElementById('modal2016');
-
     // Get the button that opens the modal
     var btn = document.getElementById("btn2016");
-
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close2016")[0];
-
     // When the user clicks the button, open the modal 
     btn.onclick = function () {
       modal2016.style.display = "block";
     }
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modal2016.style.display = "none";
     }
-
   </script>
 
   <script>
     // Get the modal
     var modalAresta = document.getElementById('modalAresta');
-
     // Get the button that opens the modal
     var btn = document.getElementById("btnAresta");
-
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("closeAresta")[0];
-
     // When the user clicks the button, open the modal 
     btn.onclick = function () {
       modalAresta.style.display = "block";
     }
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modalAresta.style.display = "none";
     }
-
   </script>
 
   <!--
